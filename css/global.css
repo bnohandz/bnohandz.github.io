@@ -1,0 +1,40 @@
+body {
+  margin: 0px;
+  font-family: "Nunito", Arial, sans-serif;
+  color: #141414;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.subtitulo {
+  font-family: "kanit", Impact, "Arial Narrow Bold", sans-serif;
+  font-size: 9rem;
+  word-break: break-all;
+  text-transform: uppercase;
+  max-width: 3.5ch;
+  line-height: 1;
+}
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+}
