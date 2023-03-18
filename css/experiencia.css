@@ -10,7 +10,7 @@
 }
 
 .experiencia .subtitulo {
-  color: #dbffff;
+  color: var(--cor-2);
   place-self: center;
 }
 

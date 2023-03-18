@@ -5,14 +5,14 @@
   border-image-source: linear-gradient(
     to right,
     var(--cor-p1) 30%,
-    var(--cor-p2) 70%
+    var(--cor-p3) 70%
   );
 }
 
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 4px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +22,7 @@
   font: 2rem/1.5 "kanit", "Nunito", Arial;
   padding: 16px 0;
   text-decoration: none;
-  color: var(--cor-1);
+  color: var(--cor-0);
   display: inline-block;
   position: relative;
   transition: 0.3s;
@@ -33,7 +33,7 @@
   display: block;
   width: 0%;
   height: 2px;
-  background: var(--cor-p1);
+  background: linear-gradient(to right, var(--cor-p1), var(--cor-p3));
   position: absolute;
   margin-top: 0px;
   transition: 0.3s;
@@ -45,6 +45,18 @@
 
 .header-container h1 a:hover {
   color: var(--cor-p1);
+}
+
+.header-container h1 a:focus {
+  background-color: var(--cor-10);
+  border-radius: 4px;
+  color: var(--cor-p1);
+  outline: 1px solid var(--cor-0);
+  padding: 16px 32px;
+}
+
+.header-container a:focus::after {
+  display: none;
 }
 
 .header-menu {
@@ -67,6 +79,23 @@
   color: var(--cor-p1);
 }
 
+.header-menu li {
+  position: relative;
+  display: flex;
+  place-items: center;
+}
+
+.header-menu li + li::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  border-radius: 20px;
+  height: 40px;
+  background-color: var(--cor-12);
+  position: absolute;
+  left: -22px;
+}
+
 .header-menu a::after {
   content: "";
   display: block;
@@ -82,9 +111,52 @@
   width: 100%;
 }
 
+.header-menu a:focus {
+  background-color: var(--cor-p1);
+  border-radius: 4px;
+  color: var(--cor-12);
+  padding: 16px;
+  outline: 1px solid #fff;
+  margin-bottom: 0px;
+}
+
+.header-menu a:focus::after {
+  display: none;
+}
+
 @media (max-width: 840px) {
+  .header-bg {
+    background: linear-gradient(to top, var(--cor-0), var(--cor-2) 20%);
+    border-bottom: none;
+  }
+
   .header-container {
     flex-direction: column;
+    gap: 8px;
+  }
+
+  .header-container h1 a {
+    color: var(--cor-12);
+  }
+
+  .header-container h1 a::after {
+    background: var(--cor-0);
+  }
+
+  .header-menu a {
+    color: var(--cor-8);
+  }
+
+  .header-menu a:hover {
+    color: var(--cor-12);
+  }
+
+  .header-menu a::after {
+    background: var(--cor-p1);
+  }
+
+  .header-menu li + li::before {
+    display: none;
   }
 }
 

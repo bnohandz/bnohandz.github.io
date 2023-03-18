@@ -5,10 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Desenvolvedor Front-End e UX/UI Designer, localizado em São Paulo">
+
   <title>Bruno Fernandes | Portifólio</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <meta name="description" content="Desenvolvedor Front-End e UX/UI Designer, localizado em São Paulo">
+
   <link rel="icon" href="./Favicon.svg" type="image/svg+xml">
+  <!-- <link rel="preload" href="./css/style.min.css" as="style"> -->
+  <link rel="stylesheet" href="./css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,42 +36,33 @@
 
   <main class="introducao">
     <!-- <img src="./img/Perfil.webp" alt="foto de perfil" width="319" height="319"> -->
-    <img src="./img/Perfil.webp" alt="foto de perfil artística" width="458" height="458">
-    <div>
-      <span class="intro-detail-up"></span>
+    <img src="./img/Perfil.webp" alt="foto de perfil artística" width="458" height="458" class="fadeInLeft" data-anime="400">
+    <div class="fadeInRight" data-anime="1200">
+      <span class="intro-detail-up fadeInUp" data-anime="2000"></span>
       <h1>Desenvolvedor<br>
         Front End &<br>
         UX/UI Design
-        <span class="intro-detail-down"></span>
+        <span class="intro-detail-down fadeInDown" data-anime="2000"></span>
 
       </h1>
       <p> Localizado em São Paulo.</p>
     </div>
   </main>
 
-  <section class="experiencia" id="experiencia" aria-label="Experiência">
+  <section class="experiencia fadeInUp" id="experiencia" aria-label="Experiência" data-anime="800">
     <h2 class="subtitulo">Experiência</h2>
     <div>
-      <p class="experiencia-texto">Sou um desenvolvedor que utiliza principalmente <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> para criar projetos. Minhas experiências anteriores não tem tanta relação com a área atual quando se trata de requisitos técnicos, mas foram cruciais para o desenvolvimento de minhas <strong>soft skills</strong>.</p>
-
-      <div class="empresa empresa-car">
-        <span class="empresa-ano">2018-2022</span>
-        <h3 class="empresa-titulo">Carrefour <span class="empresa-tit-complement">Comércio e Indústria Ltda.</span></h3>
-        <span class="empresa-titulo empresa-cargo">Op. de Caixa</span>
-        <p class="empresa-texto">Operação do caixa recepcionando clientes respeitando os passos de atendimento. Eventualmente prestar apoio em outros setores.</p>
-        <ul class="empresa-habilidades">
-          <li>Trabalho sob pressão</li>
-          <li>Atendimento ao público</li>
-          <li>Ética</li>
-          <li>Comunicação</li>
-          <li>Flexibilidade</li>
-        </ul>
-      </div>
+      <p class="experiencia-texto"><span data-anime="2000"> Hello everyone! 😁</span>
+        <br>
+        <br>
+        Sou um desenvolvedor que utiliza principalmente <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> para criar projetos.
+        Minhas experiências anteriores não tem tanta relação com a área atual quando se trata de requisitos técnicos, mas foram cruciais para o desenvolvimento de minhas <strong>soft skills</strong>.
+      </p>
 
       <div class="empresa">
         <span class="empresa-ano">2014-2015</span>
         <h3 class="empresa-titulo">CAMP <span class="empresa-tit-complement">Centro de Formação e Integração Social</span></h3>
-        <span class="empresa-titulo empresa-cargo">Jovem Aprendiz</span>
+        <span class="empresa-titulo empresa-cargo">Aprendiz</span>
         <p class="empresa-texto">Como aprendiz administrativo, fui responsável pelo arquivo inativo, onde eu organizava e manuseava os arquivos de diversos setores da empresa.</p>
         <ul class="empresa-habilidades">
           <li>Responsabiliidade</li>
@@ -77,10 +72,25 @@
           <li>Pontualidade</li>
         </ul>
       </div>
+
+      <div class="empresa empresa-car">
+        <span class="empresa-ano">2018-2022</span>
+        <h3 class="empresa-titulo">Carrefour <span class="empresa-tit-complement">Comércio e Indústria Ltda.</span></h3>
+        <span class="empresa-titulo empresa-cargo">Operacional</span>
+        <p class="empresa-texto">Operação do caixa recepcionando clientes respeitando os passos de atendimento. Eventualmente prestar apoio em outros setores.</p>
+        <ul class="empresa-habilidades">
+          <li>Trabalho sob pressão</li>
+          <li>Atendimento ao público</li>
+          <li>Ética</li>
+          <li>Comunicação</li>
+          <li>Flexibilidade</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <section class="formacao" id="formacao" aria-label="Formação">
+
+  <section class="formacao" id="formacao" aria-label="Formação" data-anime="400">
     <div class="formacao-container">
       <h2 class="subtitulo">Formação</h2>
       <div>
@@ -127,7 +137,7 @@
     </div>
   </section>
 
-  <footer class="footer" id="contato">
+  <footer class="footer" id="contato" data-anime="600">
     <div class="footer-container">
       <h2 class="subtitulo">Contato</h2>
       <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo para marcarmos uma conversa.</p>
@@ -148,6 +158,9 @@
       <p class="footer-copy">Bruno Fernandes. Alguns direitos reservados.</p>
     </div>
   </footer>
+
+  <script src="js/plugins/simple-anime.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
