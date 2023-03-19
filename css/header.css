@@ -1,5 +1,5 @@
 .header-bg {
-  background: linear-gradient(45deg, var(--cor-12), var(--cor-10));
+  background: linear-gradient(45deg, var(--cor-11), var(--cor-10));
   border-bottom: 2px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(
@@ -22,7 +22,7 @@
   font: 2rem/1.5 "kanit", "Nunito", Arial;
   padding: 16px 0;
   text-decoration: none;
-  color: var(--cor-0);
+  color: var(--cor-2);
   display: inline-block;
   position: relative;
   transition: 0.3s;
@@ -89,10 +89,10 @@
 .header-menu li + li::before {
   content: "";
   display: inline-block;
-  width: 4px;
+  width: 5px;
   border-radius: 20px;
   height: 40px;
-  background: linear-gradient(90deg, var(--cor-10), var(--cor-12));
+  background: linear-gradient(90deg, var(--cor-10), var(--cor-11));
   position: absolute;
   left: -22px;
 }
@@ -137,7 +137,7 @@
   }
 
   .header-container h1 a {
-    color: var(--cor-12);
+    color: var(--cor-0);
   }
 
   .header-container h1 a::after {

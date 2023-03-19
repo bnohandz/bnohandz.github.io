@@ -1,5 +1,5 @@
 .formacao {
-  background-color: #f0f0f0;
+  background: var(--cor-2);
 }
 
 .formacao-container {
