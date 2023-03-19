@@ -137,7 +137,7 @@
   }
 
   .header-container h1 a {
-    color: var(--cor-0);
+    color: var(--cor-12);
   }
 
   .header-container h1 a::after {
