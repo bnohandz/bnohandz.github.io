@@ -26,6 +26,7 @@
   display: inline-block;
   position: relative;
   transition: 0.3s;
+  position: relative;
 }
 
 .header-container h1 a::after {
@@ -88,10 +89,10 @@
 .header-menu li + li::before {
   content: "";
   display: inline-block;
-  width: 2px;
+  width: 4px;
   border-radius: 20px;
   height: 40px;
-  background-color: var(--cor-12);
+  background: linear-gradient(90deg, var(--cor-10), var(--cor-12));
   position: absolute;
   left: -22px;
 }
@@ -126,7 +127,7 @@
 
 @media (max-width: 840px) {
   .header-bg {
-    background: linear-gradient(to top, var(--cor-0), var(--cor-2) 20%);
+    background: linear-gradient(to top, var(--cor-0), var(--cor-3));
     border-bottom: none;
   }
 
