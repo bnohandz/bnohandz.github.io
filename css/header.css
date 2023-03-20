@@ -1,12 +1,5 @@
 .header-bg {
   background: linear-gradient(45deg, var(--cor-11), var(--cor-10));
-  border-bottom: 2px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    var(--cor-p1) 30%,
-    var(--cor-p3) 70%
-  );
 }
 
 .header-container {
@@ -20,7 +13,7 @@
 
 .header-container h1 a {
   font: 2rem/1.5 "kanit", "nunito", arial, sans-serif;
-  padding: 16px 0;
+  padding: 8px 0;
   text-decoration: none;
   color: var(--cor-2);
   display: inline-block;
@@ -53,7 +46,7 @@
   border-radius: 4px;
   color: var(--cor-10);
   outline: none;
-  padding: 16px 32px;
+  padding: 8px 16px;
 }
 
 .header-container a:focus::after {
@@ -68,7 +61,7 @@
 
 .header-menu a {
   font: 1.125rem/1.3 "kanit", sans-serif;
-  padding: 16px 0px;
+  padding: 8px 0px;
   text-decoration: none;
   color: var(--cor-0);
   display: inline-block;
