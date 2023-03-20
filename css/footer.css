@@ -67,11 +67,11 @@
 }
 
 .footer-list a:focus {
-  background-color: var(--cor-p1);
+  background: linear-gradient(45deg, var(--cor-p1), var(--cor-p2));
   border-radius: 4px;
-  color: #000;
+  color: var(--cor-11);
   padding: 10px;
-  outline: 1px solid var(--cor-0);
+  outline: none;
 }
 
 @media (max-width: 930px) {
