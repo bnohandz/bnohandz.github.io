@@ -19,7 +19,7 @@
 }
 
 .header-container h1 a {
-  font: 2rem/1.5 "kanit", "Nunito", Arial;
+  font: 2rem/1.5 "kanit", "nunito", arial, sans-serif;
   padding: 16px 0;
   text-decoration: none;
   color: var(--cor-2);

@@ -1,18 +1,18 @@
 body {
-  margin: 0px;
   font-family: "Nunito", Arial, sans-serif;
-  color: #141414;
+  color: var(--cor-11);
 }
 
+body,
 h1,
 h2,
 h3,
-p {
+p,
+ul {
   margin: 0px;
 }
 
 ul {
-  margin: 0px;
   padding: 0px;
   list-style: none;
 }
